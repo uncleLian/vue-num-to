@@ -1,6 +1,28 @@
 # vue-num-to
 
-> A Vue.js project
+> A Vue.js components to dynamic increase or decrease for number
+
+## Install
+```
+$ npm install vue-num-to
+```
+
+## Usage
+```javascript
+import Vue from 'vue'
+import vueNumTo from 'vue-num-to'
+
+Vue.use(vuenum)
+```
+
+or
+
+```html
+<script src="vue.min.js"></script>
+<!-- must place this line after vue.js -->
+<script src="vue-num-to.js"></script>
+```
+
 
 ## Build Setup
 
