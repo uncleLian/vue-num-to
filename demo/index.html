@@ -34,8 +34,8 @@
 			<div class="custom-example">
 				<!-- 其他设置 -->
 		        <h2>custom example</h2>
-		        <code>&lt;vue-num-to ref="numTo" :startVal="{{startVal}}" :endVal="{{endVal}} :duration="{{duration}}" :autoplay="{{autoplay}}" :prefix="{{prefix}}" :suffix="{{suffix}}" :decimals="{{decimals}}" :decimal="{{decimal}}" :ease="{{ease}}" @complete="handleComplete"/&gt;</code>
-		        <div class="customNumTo"><vue-num-to  ref="numTo" :start-val="startVal" :end-val="endVal" :duration="duration" :autoplay="autoplay" :prefix="prefix" :suffix="suffix" :decimals="decimals" :decimal="decimal" :ease="ease" @complete="handleComplete" /></div>
+		        <code>&lt;vue-num-to ref="numTo" :startVal="{{startVal}}" :endVal="{{endVal}} :duration="{{duration}}" :autoplay="{{autoplay}}" :prefix="{{prefix}}" :suffix="{{suffix}}" :decimals="{{decimals}}" :decimal="{{decimal}}" :ease="{{ease}}" @complete="handleCompleted"/&gt;</code>
+		        <div class="customNumTo"><vue-num-to  ref="numTo" :start-val="startVal" :end-val="endVal" :duration="duration" :autoplay="autoplay" :prefix="prefix" :suffix="suffix" :decimals="decimals" :decimal="decimal" :ease="ease" @complete="handleCompleted" /></div>
 		        <!-- 设置值 -->
 		        <div class="control">
 		            <el-input :clearable="true"  v-model.number.trim="startVal"><template slot="prepend">startVal</template></el-input>
@@ -92,8 +92,8 @@
 		        pauseResume() {
 		            this.$refs.numTo.pauseResume()
 		        },
-		        handleComplete(val) {
-		            this.$message.success(`动画完成回调，参数为：${val}`)
+		        handleCompleted(val) {
+		            this.$message.success(`Completed CallBack Value：${val}`)
 		        }
 		    }
 	    })
