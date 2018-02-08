@@ -32,6 +32,7 @@ import { requestAnimationFrame, cancelAnimationFrame } from './RAFrame.js'
 export default {
     props: {
         value: {
+            type: Number,
             default: 0
         },
         startVal: {

@@ -26,15 +26,33 @@ or
 ## Screenshot
 <img src="https://github.com/uncleLian/vue-num-to/raw/master/screenshots/vue-numTo.jpg" width="900px" style="max-width: 100%;"/>
 
-## Build Setup
+## Options
 
-``` bash
-# install dependencies
-npm install
+Property | Description | Type | Default
+|:---:|---|:---:|:---:|
+| value | binging value | Number | 0
+| startVal | the value you want to begin at | Number | 0
+| endVal | the value you want to arrive at | Number | current year
+| duration | duration in millisecond | Number | 3000 |
+| autoplay | when mounted autoplay | Boolean | true |
+| prefix | the prefix | String | '' |
+| suffix | the suffix | String | '' |
+| separator | the separator | String | , |
+| decimals | the number of decimal places to show | Number | 0 |
+| decimal | the split decimal | String | . |
+| ease | is use easing function | Boolean | true |
+| easeMethod | the easing function | Function | — |
 
-# serve with hot reload at localhost:8080
-npm run dev
+### Functions
+| Name | Description |
+|:---:|:---|
+| start | start the vue-num-to |
+| pause | pause the vue-num-to |
+| resume | resume the vue-num-to |
+| reset | reset the vue-num-to |
+| pauseResume | resume / resume the vue-num-to |
 
-# build for production with minification
-npm run build
-```
+### Callback
+| Name | Description |
+|:---:|---|
+| complete | when completed will emit 
