@@ -20,7 +20,7 @@ or
 ```html
 <script src="vue.min.js"></script>
 <!-- must place this line after vue.js -->
-<script src="vue-num-to.js"></script>
+<script src="vue-num-to.min.js"></script>
 ```
 
 

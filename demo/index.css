@@ -1,0 +1,84 @@
+#app {
+	width: 980px;
+	margin: 20px auto 100px;
+}
+#app h2{
+	font-size: 32px;
+	color: #494949;
+	margin: 15px 0;
+}
+#app code{
+	display: block;
+    padding: 8px 15px;
+    background-color: #f6f8fa;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    overflow-x: auto;
+    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+    color: #333;
+    font-size: 12px;
+    margin: 5px 0;
+}
+/*Github*/
+.github{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    width: 80px;
+    height: 80px;
+    &:hover .bg{
+        border-top-color: #F56C6C;
+    }
+}
+.github .bg{
+    width: 0;
+    height: 0;
+    border-top: 80px solid #f4516c;
+    border-left: 80px solid transparent;
+}
+.github img{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    color: #fff;
+}
+/*title*/
+.title{
+	color: #f4516c;
+    font-size: 60px;
+    text-align: center;
+}
+/*default-example*/
+.default-example .defaultNumTo{
+	color: #f7b87f;
+	font-size: 42px;
+	margin-bottom: 20px;
+}
+/*custom-example*/
+.custom-example .customNumTo{
+	color: #42b983;
+	font-size: 64px;
+	margin-bottom: 10px;
+}
+.custom-example .control {
+	margin: 10px 0;
+}
+.custom-example .el-input{
+    margin-bottom: 10px;
+    width: fit-content;
+}
+.custom-example .el-input .el-input__inner {
+	width: 130px;
+}
+.custom-example label{
+    margin: 0 10px;
+    color: #555;
+    font-size: 14px;
+}
+.custom-example .el-input-group__prepend{
+	padding: 0 10px;
+}

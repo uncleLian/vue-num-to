@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'vue-num-to.js',
+    filename: 'vue-num-to.min.js',
     library: 'vue-num-to',
     libraryTarget: 'umd'
   },

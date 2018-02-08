@@ -5,3 +5,7 @@ export default {
         Vue.component('vue-num-to', vueNumTo)
     }
 }
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.component('vue-num-to', vueNumTo)
+}
