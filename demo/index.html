@@ -44,7 +44,7 @@
 		            <el-input :clearable="true" v-model.number.trim="prefix"><template slot="prepend">prefix</template></el-input>
 		            <el-input :clearable="true" v-model.number.trim="suffix"><template slot="prepend">suffix</template></el-input>
 		            <el-input :clearable="true" v-model.number.trim="decimal"><template slot="prepend">decimal</template></el-input>
-		            <label >小数点后几位</label><el-input-number v-model="decimals" :min="0" :max="10"></el-input-number>
+		            <label >decimals</label><el-input-number v-model="decimals" :min="0" :max="10"></el-input-number>
 		            <el-checkbox v-model="autoplay">autoplay</el-checkbox>
 		            <el-checkbox v-model="ease">ease</el-checkbox>
 		        </div>
