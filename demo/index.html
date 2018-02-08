@@ -19,7 +19,7 @@
 		<!-- Github -->
         <a class="github" href="https://github.com/uncleLian/vue-num-to" target="_blank">
             <div class="bg"></div>
-            <img src="./Github.png" alt="Github">
+            <img src="https://github.com/uncleLian/vue-num-to/raw/master/screenshots/github.png" alt="Github">
         </a>
         <h1 class="title">Vue NumTo</h1>
         <!-- vueNumTo -->
@@ -38,23 +38,23 @@
 		        <div class="customNumTo"><vue-num-to  ref="numTo" :start-val="startVal" :end-val="endVal" :duration="duration" :autoplay="autoplay" :prefix="prefix" :suffix="suffix" :decimals="decimals" :decimal="decimal" :ease="ease" @complete="handleComplete" /></div>
 		        <!-- 设置值 -->
 		        <div class="control">
-		            <el-input :clearable="true"  v-model.number.trim="startVal"><template slot="prepend">开始值</template></el-input>
-		            <el-input :clearable="true" v-model.number.trim="endVal"><template slot="prepend">结束值</template></el-input>
-		            <el-input :clearable="true" v-model.number.trim="duration"><template slot="prepend">时长</template></el-input>
-		            <el-input :clearable="true" v-model.number.trim="prefix"><template slot="prepend">前缀</template></el-input>
-		            <el-input :clearable="true" v-model.number.trim="suffix"><template slot="prepend">后缀</template></el-input>
-		            <el-input :clearable="true" v-model.number.trim="decimal"><template slot="prepend">小数点符号</template></el-input>
+		            <el-input :clearable="true"  v-model.number.trim="startVal"><template slot="prepend">startVal</template></el-input>
+		            <el-input :clearable="true" v-model.number.trim="endVal"><template slot="prepend">endVal</template></el-input>
+		            <el-input :clearable="true" v-model.number.trim="duration"><template slot="prepend">duration</template></el-input>
+		            <el-input :clearable="true" v-model.number.trim="prefix"><template slot="prepend">prefix</template></el-input>
+		            <el-input :clearable="true" v-model.number.trim="suffix"><template slot="prepend">suffix</template></el-input>
+		            <el-input :clearable="true" v-model.number.trim="decimal"><template slot="prepend">decimal</template></el-input>
 		            <label >小数点后几位</label><el-input-number v-model="decimals" :min="0" :max="10"></el-input-number>
-		            <el-checkbox v-model="autoplay">自动开始</el-checkbox>
-		            <el-checkbox v-model="ease">平滑动画</el-checkbox>
+		            <el-checkbox v-model="autoplay">autoplay</el-checkbox>
+		            <el-checkbox v-model="ease">ease</el-checkbox>
 		        </div>
 		        <!-- 控制按钮 -->
 		        <div class="control">
-		            <el-button type="primary" @click="start">开始</el-button>
-		            <el-button type="primary" @click="pause">暂停</el-button>
-		            <el-button type="primary" @click="resume">恢复</el-button>
-		            <el-button type="primary" @click="reset">重置</el-button>
-		            <el-button type="primary" @click="pauseResume">暂停 / 恢复</el-button>
+		            <el-button type="primary" @click="start">start</el-button>
+		            <el-button type="primary" @click="pause">pause</el-button>
+		            <el-button type="primary" @click="resume">resume</el-button>
+		            <el-button type="primary" @click="reset">reset</el-button>
+		            <el-button type="primary" @click="pauseResume">pause / resume</el-button>
 		        </div>
 			</div>
 		</div>

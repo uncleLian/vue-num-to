@@ -23,6 +23,8 @@ or
 <script src="vue-num-to.min.js"></script>
 ```
 
+## Screenshot
+<img src="https://github.com/uncleLian/vue-num-to/raw/master/screenshots/vue-numTo.jpg" width="900px" style="max-width: 100%;"/>
 
 ## Build Setup
 
